@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estrutura de repetição</title>
+</head>
+<body>
+    <h1>Patinhos</h1>
+    <div id="letra"></div>
+
+    <script>
+        let letra = "";
+        for (let i = 5; i >= 1; i--) {
+
+            letra += `<p> ${i} patinho${i === 1 ? '':'s'} fo${i === 1 ? 'i' : 'ram' } passear</p>`;
+            letra += `<p>Além das montanhas para brimcar</p>`;
+            letra += `<p>A mamãe gritou: Quá, quá, quá, quá</p>`;
+            letra += `<p>Mas só ${i === 1 ? 'um': i - 1} patinho${i - 1 === 1 ? '' : 's'} vol${i - 1 === 1 ? 'tou' : 'taram'} de lá</p>`;
+            letra += `<br>`;
+        }
+
+       document.getElementById('letra').innerHTML = letra; 
+
+    </script>
+</body>
+</html>
